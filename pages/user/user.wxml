@@ -1,0 +1,13 @@
+<view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+  <text class="textMeth1">课程编号：</text>
+  <text class="textMeth2">{{item.courseNumber}}\n</text>
+  <text class="textMeth1">教师名称: </text>
+  <text class="textMeth2">{{item.name}}老师\n</text>
+  <text class="textMeth1">总体印象：</text>
+  <text class="textMeth2">{{item.overview}}\n</text>
+  <text class="textMeth1">课程难度：</text>
+  <text class="textMeth2">{{item.dif}}\n</text>
+  <text class="textMeth1">有趣度：</text>
+  <text class="textMeth2">{{item.interest}}\n</text>
+</view>
+

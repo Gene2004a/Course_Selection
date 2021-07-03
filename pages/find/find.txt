@@ -1,0 +1,26 @@
+<view class="root">
+
+  <form class="form1" bindsubmit="btnSbmit">
+    <view class="top">
+      <view class="inputtMeth">
+        <input class="inputMeth" placeholder="请输入您要查询的老师姓名" id="inputName" name="inputName"></input>
+      </view>
+      <view class="buttonMeth">
+        <button class="BT" form-type="submit">查询</button>
+      </view>
+    </view>
+  </form>
+  <view class="content">
+    <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+      <navigator url="../user/user?_id={{item._id}}">
+        <text class="textMeth1">教师名称：</text>
+        <text class="textMeth2">{{item.name}}</text>
+        <text class="textMeth1">课程名称:</text>
+        <text class="textMeth2">{{item.courseNumber}}\n</text>
+        <text class="textMeth1">整体印象：</text>
+        <text class="textMeth2">{{item.overview}}</text>
+      </navigator>
+    </view>
+  </view>
+  
+</view>

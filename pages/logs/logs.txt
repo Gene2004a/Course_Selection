@@ -1,0 +1,22 @@
+<view class="root">
+<navigator url="../find/find">
+    <view class="top">
+      <view class="inputtMeth">
+        <input class="inputMeth" placeholder="查看老师" id="inputName" name="inputName"></input>
+      </view>
+    </view>
+</navigator>
+
+  <view class="content">
+      <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+        <navigator url="../user/user?_id={{item._id}}">
+          <text class="textMeth1">课程名称: </text>
+          <text class="textMeth2">{{item.courseNumber}}</text>
+          <text class="textMeth1">老师姓名: </text>
+          <text class="textMeth2">{{item.name}}\n</text>
+          <text class="textMeth1">总体印象：</text>
+          <text class="textMeth2">{{item.overview}}</text>
+        </navigator>
+      </view>
+  </view>
+</view>

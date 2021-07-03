@@ -1,0 +1,42 @@
+<view class="container">
+
+  <view class="top">
+    <text>快来选一个你想要评价的老师吧</text>
+  </view>
+
+  
+  <form bindsubmit="submitform">
+    <view class="overview">
+    <view class="sectionName">
+      	<view class="textMeth"">
+		<view class="title">邮件</view>
+		<input placeholder="两字短标题"></input>
+	</view>
+    </view>
+    <input class="inputMeth"  name="inputCourseNumber"></input>
+
+    <view class="sectionName">
+      <text class="textMeth">这门课是由哪位老师讲授</text>
+    </view>
+    <input class="inputMeth" name="inputName"></input>
+    <view class="sectionName">
+      <text class="textMeth">总体印象 1-100</text>
+    </view>
+    <input class="inputMeth" name="inputOverview"></input>
+
+    <view class="sectionName">
+      <text class="textMeth">难度评级 1-100</text>
+    </view>
+     <input class="inputMeth" name="inputDif"></input>
+
+    <view class="sectionName">
+      <text class="textMeth">有趣程度 1-100</text>
+    </view>
+    <input class="inputMeth"  name="inputInterest"></input>
+  <text>\n</text>
+    <!-- tips:如果使用type标签，会使hover—class效果失效 -->
+    <button class="refresh" bindtap="btn" hover-class="submit-active" form-type="submit">提交</button>
+  
+  </view>
+  </form>
+</view>
